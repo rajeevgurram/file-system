@@ -1,0 +1,41 @@
+header, .row {
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom: 10px; */
+}
+
+header {
+    border-bottom: 2px #ebebeb solid;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.row {
+    padding-left: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    cursor: pointer;
+}
+
+.row:hover {
+    background-color: #ebebeb;
+    cursor: pointer;
+}
+  
+.column1 {
+    flex: 6;
+}
+
+.column2 {
+    flex: 3;
+}
+
+.column3 {
+    flex: 1;
+}
+
+.fileName {
+    top: -3px;
+    position: relative;
+}

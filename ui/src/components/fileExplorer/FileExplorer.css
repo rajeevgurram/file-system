@@ -1,0 +1,26 @@
+* {
+    user-select: none;
+}
+
+.file-system {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    height: 90vh;
+    border: 3px #ebebeb solid;
+    padding: 20px;
+    overflow: scroll;
+}
+
+.explorer {
+    width: 68%;
+    height: 94.3vh;
+    border: 3px #ebebeb solid;
+    border-left: 0;
+    overflow: scroll;
+}

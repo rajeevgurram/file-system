@@ -1,0 +1,22 @@
+.folders {
+    position: relative;
+    left: 10px;
+}
+
+.folders span {
+    display: block;
+    margin: 5px;
+}
+
+.folder {
+    display: flex;
+}
+
+.folder:hover{
+    background-color: #ebebeb;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #ebebeb;
+}
