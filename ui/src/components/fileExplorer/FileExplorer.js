@@ -49,7 +49,6 @@ class FileExplorer extends React.Component {
     }
 
     async fetchFolders(path) {
-        console.log('/directories/' + path);
         let response;
         try {
             const files = await (await axios.get('/directories/' + path)).data;

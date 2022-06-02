@@ -3,6 +3,7 @@ import { setupServer } from 'msw/node';
 import { render, fireEvent, waitFor, screen } from '@testing-library/react';
 import FileExplorer from './FileExplorer';
 
+window.alert = () => {};
 const rootFolders = [
   {
     type: 'folder',
@@ -66,6 +67,9 @@ const server = setupServer(
     return res(ctx.json(rootFolders));
   }),
   rest.get('/directories//lib', (req, res, ctx) => {
+    return res(ctx.json(libFolders));
+  }),
+  rest.get('/directories//lib/test', (req, res, ctx) => {
     return res(ctx.json(libFolders));
   }),
   rest.get('/directories//var', (req, res, ctx) => {
