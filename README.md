@@ -1,7 +1,23 @@
-# Getting Started with Create React App
-## Available Scripts
+# Getting Started with File System Application
+File system application is react based web application it shows the folders and files with in the local system
 
-In the project directory, you can run:
+## Components
+### Server:
+    Server is Node.js application which exploses a endpoint and when called it gets the folders, files and it's metadata
+### UI:
+    Contains the main file system interface
+
+## Technologies Used
+HTML5,
+CSS3,
+JavaScript,
+React.Js,
+Node.Js,
+Express.Js
+
+
+## Run Application
+In the project directory, run:
 
 ### `npm run install-dependencies`
 ### `npm run start`
@@ -12,5 +28,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+## Run Test Cases
 ### `cd ui`
-### `npm test`
+### `npm test -- --coverage`
