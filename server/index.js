@@ -28,10 +28,10 @@ app.get('/directories/*', (req, res) => {
         res.status(200);
     } catch(e) {
         console.log(e);
+        response = {
+            error: true
+        };
         res.status(500);
-        response = {};
-        response.error = true;
-        response.message = e;
     }
     res.send(response);
 });
@@ -39,7 +39,7 @@ app.get('/directories/*', (req, res) => {
 const PORT = process.env.PORT || 8090;
 app.listen(PORT, (error) =>{
     if(!error)
-        console.log(`Server is Successfully Running, and App is listening on port ${PORT}`);
+        console.log(`Server is listening on port ${PORT}`);
     else 
         console.log("Error occurred, server can't start", error);
     }

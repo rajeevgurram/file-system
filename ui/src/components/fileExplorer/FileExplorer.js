@@ -3,6 +3,7 @@ import './FileExplorer.css';
 import SideBar from '../sidebar/SideBar';
 import FolderList from '../folderList/FolderList';
 import _ from 'underscore';
+import axios from 'axios';
 
 class FileExplorer extends React.Component {
     constructor(props) {
@@ -48,11 +49,18 @@ class FileExplorer extends React.Component {
     }
 
     async fetchFolders(path) {
-        const files = await (await fetch('/directories/' + path)).json();
-        if(_.isArray(files)) {
-            return _.sortBy(files, folder => folder.type === 'file');
+        console.log('/directories/' + path);
+        let response;
+        try {
+            const files = await (await axios.get('/directories/' + path)).data;
+            response = _.sortBy(files, folder => folder.type === 'file');
+        } catch (error) {
+            response = {
+                error: true
+            }
         }
-        return files;
+        
+        return response;
     }
 
     onSelectDirectory(event) {
@@ -121,7 +129,7 @@ class FileExplorer extends React.Component {
                         onExpandDirectory = {this.onExpandDirectory}
                     />
                 </div>
-                <div className = "explorer">
+                <div className = "folder-list">
                     <FolderList 
                         folders = {this.state.folderList}
                         onSelectDirectory = {this.onSelectDirectory}

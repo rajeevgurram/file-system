@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1654127059046" clover="3.2.0">
+  <project timestamp="1654127059046" name="All files">
+    <metrics statements="55" coveredstatements="55" conditionals="31" coveredconditionals="31" methods="15" coveredmethods="15" elements="101" coveredelements="101" complexity="0" loc="55" ncloc="55" packages="3" files="3" classes="3"/>
+    <package name="fileExplorer">
+      <metrics statements="48" coveredstatements="48" conditionals="8" coveredconditionals="8" methods="10" coveredmethods="10"/>
+      <file name="FileExplorer.js" path="/Users/rgurram/learning/file-system/ui/src/components/fileExplorer/FileExplorer.js">
+        <metrics statements="48" coveredstatements="48" conditionals="8" coveredconditionals="8" methods="10" coveredmethods="10"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="12" count="5" type="stmt"/>
+        <line num="26" count="5" type="stmt"/>
+        <line num="27" count="5" type="stmt"/>
+        <line num="29" count="5" type="stmt"/>
+        <line num="30" count="5" type="stmt"/>
+        <line num="32" count="5" type="stmt"/>
+        <line num="36" count="5" type="stmt"/>
+        <line num="37" count="5" type="stmt"/>
+        <line num="38" count="5" type="stmt"/>
+        <line num="39" count="15" type="stmt"/>
+        <line num="40" count="15" type="stmt"/>
+        <line num="41" count="15" type="stmt"/>
+        <line num="44" count="5" type="stmt"/>
+        <line num="52" count="11" type="stmt"/>
+        <line num="54" count="11" type="stmt"/>
+        <line num="55" count="11" type="stmt"/>
+        <line num="56" count="21" type="stmt"/>
+        <line num="58" count="3" type="stmt"/>
+        <line num="63" count="10" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="71" count="8" type="stmt"/>
+        <line num="72" count="8" type="stmt"/>
+        <line num="74" count="8" type="stmt"/>
+        <line num="75" count="17" type="cond" truecount="2" falsecount="0"/>
+        <line num="76" count="8" type="stmt"/>
+        <line num="78" count="9" type="stmt"/>
+        <line num="81" count="8" type="stmt"/>
+        <line num="85" count="8" type="stmt"/>
+        <line num="86" count="8" type="stmt"/>
+        <line num="87" count="8" type="stmt"/>
+        <line num="88" count="8" type="stmt"/>
+        <line num="89" count="8" type="stmt"/>
+        <line num="90" count="8" type="stmt"/>
+        <line num="91" count="8" type="stmt"/>
+        <line num="93" count="8" type="cond" truecount="2" falsecount="0"/>
+        <line num="94" count="6" type="stmt"/>
+        <line num="95" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="96" count="3" type="stmt"/>
+        <line num="97" count="3" type="stmt"/>
+        <line num="100" count="2" type="stmt"/>
+        <line num="105" count="2" type="stmt"/>
+        <line num="106" count="6" type="stmt"/>
+        <line num="107" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="108" count="2" type="stmt"/>
+        <line num="112" count="2" type="stmt"/>
+        <line num="118" count="4" type="stmt"/>
+        <line num="124" count="13" type="stmt"/>
+      </file>
+    </package>
+    <package name="folderList">
+      <metrics statements="3" coveredstatements="3" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <file name="FolderList.js" path="/Users/rgurram/learning/file-system/ui/src/components/folderList/FolderList.js">
+        <metrics statements="3" coveredstatements="3" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+        <line num="8" count="17" type="stmt"/>
+        <line num="17" count="27" type="stmt"/>
+        <line num="18" count="27" type="cond" truecount="2" falsecount="0"/>
+      </file>
+    </package>
+    <package name="sidebar">
+      <metrics statements="4" coveredstatements="4" conditionals="17" coveredconditionals="17" methods="3" coveredmethods="3"/>
+      <file name="SideBar.js" path="/Users/rgurram/learning/file-system/ui/src/components/sidebar/SideBar.js">
+        <metrics statements="4" coveredstatements="4" conditionals="17" coveredconditionals="17" methods="3" coveredmethods="3"/>
+        <line num="8" count="23" type="stmt"/>
+        <line num="12" count="35" type="stmt"/>
+        <line num="16" count="59" type="stmt"/>
+        <line num="17" count="59" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

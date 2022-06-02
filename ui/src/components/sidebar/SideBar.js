@@ -12,7 +12,7 @@ class SideBar extends React.Component {
         return (
             <div className='folders'>
                 {
-                    this.props.folders.map((folder, i) => {
+                    this.props.folders ? this.props.folders.map((folder, i) => {
                         const is_directory = folder.type === 'folder';
                         return (
                             <React.Fragment key={ i }>
@@ -37,7 +37,7 @@ class SideBar extends React.Component {
                                 }
                             </React.Fragment>
                         )
-                    })
+                    }) : 'No folders available to display'
                 }
             </div>
         );
